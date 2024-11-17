@@ -17,49 +17,44 @@ export default function Navbar() {
 
   return (
     <nav 
-  className="fixed top-0 left-0 w-full bg-black/50 text-white"
-  style={{ 
-    zIndex: 9999,
-    position: 'fixed',
-    width: '100%',
-    top: 0,
-    left: 0
-  }}
->
-  <div className="max-w-7xl mx-auto px-4">
-    <div className="flex justify-between items-center h-16">
-     
-      <div className="flex-1 flex justify-center space-x-12"> {/* Increased space-x and centered */}
-      <Link 
+    className="backdrop-blur-sm"
+    style={{ 
+      zIndex: 9999,
+      position: 'fixed',
+      top: '0rem',
+      left: '0rem',
+      right: '0rem',
+      padding: '1.5rem',
+      color: 'white',
+      backgroundColor: 'rgba(0, 0, 0, 0.3)'  
+    }}
+  >
+          <div className="flex-1 flex gap-6 items-center">
+        <Link 
           href="/" 
-          className="text-2xl font-bold text-white"
+          className=" text-white hover:text-gray-300 transition-colors"
         >
-          Joshua
+          Home
         </Link>
         <Link 
           href="/about" 
-          className="text-white hover:text-gray-300"
+          className="text-white hover:text-gray-300 transition-colors"
         >
           About
         </Link>
         <Link 
           href="/projects" 
-          className="text-white hover:text-gray-300"
+          className="text-white hover:text-gray-300 transition-colors"
         >
           Projects
         </Link>
         <Link 
           href="/contact" 
-          className="text-white hover:text-gray-300"
+          className="text-white hover:text-gray-300 transition-colors"
         >
           Contact
         </Link>
       </div>
-      
-      {/* Right side - empty div for balance */}
-      <div className="flex-1"></div>
-    </div>
-  </div>
 </nav>
   )
 }

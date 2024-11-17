@@ -27,8 +27,8 @@ export default function Home() {
           className="absolute inset-0 flex flex-col items-center justify-center text-white"
           style={{ zIndex: 2 }}
         >
-          <h1 className="text-6xl font-bold mb-4">Your Name</h1>
-          <p className="text-xl mb-8">Creative Developer | San Francisco</p>
+          <h1 className="text-6xl font-bold mb-4">Josue Uselmano</h1>
+          <p className="text-xl mb-8">Web Developer | San Francisco</p>
           <button className="px-6 py-3 bg-transparent border-2 hover:bg-white hover:text-black transition-all">
             View My Work
           </button>
